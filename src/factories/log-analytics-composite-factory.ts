@@ -1,14 +1,5 @@
-import { config } from '../config/main';
 import { LogAnalyticsComposite } from '../composite';
-import { IntercomAnalyticsProviderAdapter } from '../providers/intercom';
-import { IntercomLogPurchase } from '../providers/intercom/use-cases/log-purchase';
-
-const makeLogPurchaseProvider = {
-	intercom: () => {
-		const intercom = new IntercomAnalyticsProviderAdapter(config.analytics.intercom.apiKey);
-		return new IntercomLogPurchase(intercom);
-	},
-};
+import { makeLogPurchaseProvider } from './log-purchase-providers-factory';
 
 export const makeLogAnalyticsComposite = () => {
 	const intercom = makeLogPurchaseProvider.intercom();

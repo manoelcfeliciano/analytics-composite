@@ -1,5 +1,6 @@
 const config = {
 	preset: 'ts-jest',
+	setupFilesAfterEnv: ['./tests/utils/setup/index.ts'],
 	collectCoverageFrom: [
 		'<rootDir>/src/**/*.ts',
 		'!<rootDir>/src/**/protocol.ts',
