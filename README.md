@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Analytics Composite" ttle="Analytics Composite" src="https://i.postimg.cc/sfZtVSdL/f10a7cb253c846268b15b453c8087de0.png" />
+    <img alt="Analytics Composite" ttle="Analytics Composite" src="https://i.postimg.cc/NGJ5w3tD/logo.png" />
     <p>Analytics Composite</p>
 </h1>
 
