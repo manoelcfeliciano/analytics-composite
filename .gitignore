@@ -9,7 +9,7 @@ coverage
 *.log
 .env
 .env*
-!.env.sample
+!.env.example
 
 .npmrc
 configure.js
