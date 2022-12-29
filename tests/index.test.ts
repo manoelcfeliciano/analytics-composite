@@ -19,8 +19,6 @@ describe('Main', () => {
 		test('when api key is defined for Intercom', async () => {
 			const logSpy = jest.spyOn(global.console, 'log');
 
-			process.env.INTERCOM_API_KEY = 'secret';
-
 			await sut();
 
 			expect(logSpy.mock.calls[0][0]).toStrictEqual('Logging purchase...');
