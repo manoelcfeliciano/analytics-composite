@@ -12,6 +12,52 @@
 
 <br />
 
+<div align="center">
+    <h3 colspan="4">Coverage Report</h3>
+</div>
+
+<div align="center">
+<table>
+<thead>
+</thead>
+<tbody>
+  <tr>
+    <th>Statements</th>
+    <th>Branches</th>
+    <th>Functions</th>
+    <th>Lines</th>
+  </tr>
+  <tr>
+  <td>
+
+![Statements](https://img.shields.io/badge/statements-100%25-brightgreen.svg?style=flat)
+
+  </td>
+
+  <td>
+
+![Branches](https://img.shields.io/badge/branches-100%25-brightgreen.svg?style=flat)
+
+  </td>
+
+  <td>
+
+![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg?style=flat)
+
+  </td>
+
+  <td>
+
+![Lines](https://img.shields.io/badge/lines-100%25-brightgreen.svg?style=flat)
+
+  </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+<br />
+
 ## 🚀 Technologies
 
 -   [Node.js](https://nodejs.org/en/)
