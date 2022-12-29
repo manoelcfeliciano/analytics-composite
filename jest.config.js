@@ -19,16 +19,11 @@ const config = {
 	coverageProvider: 'babel',
 	testEnvironment: 'node',
 	transform: {
-		'.+\\.ts$': 'ts-jest',
+		'.+\\.ts$': ['ts-jest', { isolatedModules: true }],
 	},
 	testMatch: ['**/*.(spec|test).ts'],
 	moduleNameMapper: {
 		'~/(.*)': '<rootDir>/src/$1',
-	},
-	globals: {
-		'ts-jest': {
-			isolatedModules: true,
-		},
 	},
 	clearMocks: true,
 };
