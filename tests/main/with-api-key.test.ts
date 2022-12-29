@@ -1,31 +1,5 @@
-const searchIntercomSpy = jest.fn().mockImplementation(() => ({ total_count: 0 }));
-
-const sut = async () => {
-	jest.mock('intercom-client', () => {
-		return {
-			Client: function () {
-				return {
-					contacts: { search: searchIntercomSpy, createUser: jest.fn() },
-					events: { create: jest.fn() },
-				};
-			},
-			Operators: { And: 'and' },
-		};
-	});
-	const { run } = await require('../../src/main');
-
-	return run();
-};
-
-jest.mock('~/config/main', () => ({
-	config: {
-		analytics: {
-			intercom: {
-				apiKey: '123',
-			},
-		},
-	},
-}));
+import './mocks/with-api-key-mocks';
+import { sut } from './mocks/with-api-key-mocks';
 
 describe('Main', () => {
 	describe('Should run properly and log the expected info', () => {

@@ -1,14 +1,5 @@
+import './mocks/without-api-key-mocks';
 import { run as sut } from '../../src/main';
-
-jest.mock('~/config/main', () => ({
-	config: {
-		analytics: {
-			intercom: {
-				apiKey: undefined,
-			},
-		},
-	},
-}));
 
 describe('Main', () => {
 	describe('Should run properly and log the expected info', () => {
