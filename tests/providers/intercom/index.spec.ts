@@ -33,7 +33,7 @@ jest.mock('intercom-client', () => ({
 }));
 
 type SutPayload = {
-	token?: string;
+	token?: string | null;
 };
 
 const makeSut = (payload?: SutPayload) => {
@@ -79,7 +79,7 @@ describe('IntercomAnalyticsProviderAdapter Test', () => {
 			},
 		};
 
-		const { sut, stubs } = makeSut({ token: null });
+		const { sut } = makeSut({ token: null });
 
 		expect(constructorSpy).not.toHaveBeenCalled();
 

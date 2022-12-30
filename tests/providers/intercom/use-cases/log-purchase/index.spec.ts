@@ -1,6 +1,6 @@
 import { IntercomLogPurchase } from '../../../../../src/providers/intercom/use-cases/log-purchase/index';
 import { IntercomAnalytics } from '../../../../../src/protocols/intercom';
-import { makeFakeUser } from '~/../tests/utils/factories/user';
+import { makeFakeUser } from '../../../../../tests/utils/factories/user';
 import { faker } from '@faker-js/faker';
 
 const PURCHASE_EVENT_NAME = 'made purchase';

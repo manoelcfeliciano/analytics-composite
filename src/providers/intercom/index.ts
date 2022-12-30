@@ -4,7 +4,7 @@ import { IntercomAnalytics } from '~/protocols/intercom';
 export class IntercomAnalyticsProviderAdapter implements IntercomAnalytics {
 	private readonly client: Client | null;
 
-	constructor(token: string | undefined) {
+	constructor(token: string | undefined | null) {
 		if (token) {
 			this.client = new Client({ tokenAuth: { token } });
 		}

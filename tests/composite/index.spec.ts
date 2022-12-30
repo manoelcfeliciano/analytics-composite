@@ -1,6 +1,6 @@
 import { LogAnalyticsComposite } from '../../src/composite/index';
-import { LogAnalytics } from '~/protocols/log-analytics';
-import { LogAnalyticsPurchase } from '~/protocols/log-analytics-purchase';
+import { LogAnalytics } from '../../src/protocols/log-analytics';
+import { LogAnalyticsPurchase } from '../../src/protocols/log-analytics-purchase';
 
 const makeLogAnalyticsStub = () => {
 	class LogAnalyticsProviderStub implements LogAnalyticsPurchase {
